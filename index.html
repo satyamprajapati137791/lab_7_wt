@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 - Bootstrap Accordion Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRI14kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkulAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <div class="container py-4">
+        <!-- Dashboard heading -->
+        <div class="bg-primary text-white rounded p-3 mb-4">
+            <h1 class="h3 mb-1">Bootstrap Accordion Dashboard</h1>
+            <p class="mb-0">Satyan Prajapati | 92500103013</p>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion" id="dashboardAccordion">
+            <!-- Item 1: Card -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCard">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard" aria-expanded="true" aria-controls="collapseCard">
+                        Card
+                    </button>
+                </h2>
+                <div id="collapseCard" class="accordion-collapse collapse show" aria-labelledby="headingCard" data-bs-parent="#dashboardAccordion">
+                    <div class="accordion-body">
+                        <div class="card" style="width: 18rem;">
+                            <img src="banner.svg" class="card-img-top" alt="Lab 7 banner">
+                            <div class="card-body">
+                                <h5 class="card-title">Dashboard Card</h5>
+                                <p class="card-text">
+                                    This card is placed inside an accordion item. Cards group an image, text and a button in one neat block.
+                                </p>
+                                <a href="#" class="btn btn-primary">Open Card</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Alert -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAlert">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlert" aria-expanded="false" aria-controls="collapseAlert">
+                        Alert Box
+                    </button>
+                </h2>
+                <div id="collapseAlert" class="accordion-collapse collapse" aria-labelledby="headingAlert" data-bs-parent="#dashboardAccordion">
+                    <div class="accordion-body">
+                        <div class="alert alert-primary" role="alert">Primary alert - dashboard updated.</div>
+                        <div class="alert alert-secondary" role="alert">Secondary alert - general note.</div>
+                        <div class="alert alert-success" role="alert">Success alert - lab submitted.</div>
+                        <div class="alert alert-danger" role="alert">Danger alert - something went wrong.</div>
+                        <div class="alert alert-warning" role="alert">Warning alert - check your input.</div>
+                        <div class="alert alert-info" role="alert">Info alert - new update available.</div>
+                        <div class="alert alert-light" role="alert">Light alert - simple message.</div>
+                        <div class="alert alert-dark" role="alert">Dark alert - important message.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Button -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingButton">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseButton" aria-expanded="false" aria-controls="collapseButton">
+                        Button
+                    </button>
+                </h2>
+                <div id="collapseButton" class="accordion-collapse collapse" aria-labelledby="headingButton" data-bs-parent="#dashboardAccordion">
+                    <div class="accordion-body">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Table -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTable">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="false" aria-controls="collapseTable">
+                        Table
+                    </button>
+                </h2>
+                <div id="collapseTable" class="accordion-collapse collapse" aria-labelledby="headingTable" data-bs-parent="#dashboardAccordion">
+                    <div class="accordion-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Roll No</th>
+                                        <th scope="col">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Satyan Prajapati</td>
+                                        <td>92500103013</td>
+                                        <td>Lab 7</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Web Technology</td>
+                                        <td>01CE1306</td>
+                                        <td>Bootstrap</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Component</td>
+                                        <td>Accordion</td>
+                                        <td>Dashboard</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Progress -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingProgress">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProgress" aria-expanded="false" aria-controls="collapseProgress">
+                        Progress Bar
+                    </button>
+                </h2>
+                <div id="collapseProgress" class="accordion-collapse collapse" aria-labelledby="headingProgress" data-bs-parent="#dashboardAccordion">
+                    <div class="accordion-body">
+                        <p class="mb-1">HTML</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 90%">90%</div>
+                        </div>
+                        <p class="mb-1">CSS</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" style="width: 75%">75%</div>
+                        </div>
+                        <p class="mb-1">Bootstrap</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning text-dark" style="width: 60%">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6: List group and badge -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingList">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseList" aria-expanded="false" aria-controls="collapseList">
+                        List Group and Badge
+                    </button>
+                </h2>
+                <div id="collapseList" class="accordion-collapse collapse" aria-labelledby="headingList" data-bs-parent="#dashboardAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Completed labs
+                                <span class="badge bg-success rounded-pill">7</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Pending labs
+                                <span class="badge bg-warning text-dark rounded-pill">3</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Messages
+                                <span class="badge bg-primary rounded-pill">12</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
